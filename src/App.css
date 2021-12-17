@@ -8,7 +8,7 @@
   margin:0;
   width: 100%;
   height:100px;
-  background-color:#3078b3;
+  background-color:759eda;
   text-align: left;
 }
 .search > input{
@@ -17,11 +17,14 @@
  border:0px;
  margin-bottom: 10px;
  color: white;
- 
+ margin-left:  10px;
+}
+input:focus{
+  border:1px solid black;
 }
 
 .buttons > button{
-  background-color: #3078b3;
+  background-color: #73b4e9;
   margin-left: 20px;
   border: 0;
   font-size: 1.5rem;
@@ -42,11 +45,7 @@ body{
 .tem{
   display:inline;
 }
-.img{
- 
-  width:50px;
- 
-}
+
 .website{
  align-items: center;
  line-height: 2rem;
@@ -63,25 +62,30 @@ h2{
 .maining{
   width: 150px;
   height: 150px;
-  padding-right: 23%;
+  padding-top: 2%;
+  /* padding-right: 23%; */
 }
 .weather-change{
-  display: grid;
-  grid-template-columns: repeat(7,1fr);
-  padding: 0rem 12rem 0rem 12rem;
+  display: flex;
+  justify-content: space-around;
+  /* grid-template-columns: repeat(7,1fr); */
+  /* padding: 0rem 12rem 0rem 12rem; */
+  flex-wrap: wrap;
 
 }
 .weather-change img {
   width: 100px;
-  margin: 0.5rem 0;
+  /* margin: 0.5rem 0; */
  
 }
 
 .weather-change h3{
-  margin-left: 2rem;
+  /* margin-left: 2rem; */
   color: #091948;
-  grid-template-columns: 1fr;
-  display: grid;
+  
+  display: flex;
+  justify-content: space-around;
+  flex-wrap:wrap;
   
 }
 .weather{
@@ -91,9 +95,11 @@ h2{
 }
 .humi{
   font-size:small;
+  text-align: center;
 }
 .tem{
   font-size:large;
+  text-align: center;
 }
 
 .over{
@@ -101,10 +107,26 @@ h2{
 }
 
 img{
-  height: 80px;
-  width:80px;
- padding-left: 26%;
+  height: 50px;
+  width: 50px;
+ /* padding-left: 26%; */
 }
+.container{
+  text-align: center;
+
+}
+
+@media (max-width: 460px) {
+  button{
+    /* width:100px; */
+    font-size: 15px;
+  }
+.search{
+  width: 150px;
+}
+
+}
+ 
   
 
 

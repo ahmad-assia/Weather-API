@@ -27,10 +27,10 @@ class App extends Component {
     return (
       <div className="app">
         <div className="navbar">
-          <div className="search"><input placeholdor="london" type= "text" /></div>
+          <div className="search"><input placeholdor="search" type= "text" /></div>
           <div className="buttons"> <button>FIND WEATHER</button> </div>
-        </div>
-    
+      </div>
+  <div className="container">
         <div className="website">
           <img className="maining" alt=""src={"https://via.placeholder.com/350x150"}/>
           <div className="over">overcast clouds</div>
@@ -74,9 +74,11 @@ class App extends Component {
           <img  alt="mostlycloudy icon"src={"https://via.placeholder.com/150"}  />
           <h3>13°C</h3>
           </div>
-       
+          </div>
         </div>
       </div>
+  
+
     );
   
   }
